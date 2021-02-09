@@ -20,18 +20,20 @@ console.log(spyCar("potato")); // prints "I spy a car"
 ***********************************************************************/
 
 // your code here!
+                    //iSpy, tree
 function boundByAnArg(cb, arg) {
   // let res = cb.bind(arg);
+  // null is the context (1st arg), arg is the 2nd argument (...args goinig forward)
   return cb.bind(null, arg);
 }
+              //tree
+function iSpy(thing) {
+  return "I spy a " + thing;
+}
 
-// function iSpy(thing) {
-//   return "I spy a " + thing;
-// }
-
-// let spyCar = boundByAnArg(iSpy, "car");
-// console.log(spyCar()); // prints "I spy a car"
-// console.log(spyCar("potato")); // prints "I spy a car"
+let spyCar = boundByAnArg(iSpy, "car");
+console.log(spyCar()); // prints "I spy a car"
+console.log(spyCar("potato")); // prints "I spy a car"
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
