@@ -1,7 +1,7 @@
 /***********************************************************************
 Write a function named `boundByAnArg(function, arg)` that will accept a
 function and an argument. When invoked the boundByAnArg function will return a
-function that will utilize the original argument passed into boundByAnArg. 
+function that will utilize the original argument passed into boundByAnArg.
 
 See below for an example:
 
@@ -20,6 +20,10 @@ console.log(spyCar("potato")); // prints "I spy a car"
 ***********************************************************************/
 
 // your code here!
+function boundByAnArg(cb, arg) {
+  let res = cb.bind(arg);
+  return res();
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

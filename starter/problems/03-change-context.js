@@ -23,7 +23,10 @@ console.log(changeContext(getSecret, map)); // prints "I don't know where I'm go
 ***********************************************************************/
 
 // your code here!
-
+function changeContext(cb, object) {
+  let res = cb.bind(object);
+  return res();
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
