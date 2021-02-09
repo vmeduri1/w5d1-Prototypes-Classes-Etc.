@@ -1,7 +1,7 @@
 /***********************************************************************
 Write a function named `changeContext(function, object)` that will accept a
 function and an object. The changeContext function should return the result of
-the function being invoked with the passed in object as it's context. 
+the function being invoked with the passed in object as it's context.
 
 Take careful note of how this is invoked:
 
@@ -23,6 +23,7 @@ console.log(changeContext(getSecret, map)); // prints "I don't know where I'm go
 ***********************************************************************/
 
 // your code here!
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

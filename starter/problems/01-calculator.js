@@ -23,6 +23,22 @@ calculator.total // => returns 30
 
 function Calculator() {
 	this.total = 0;
+	this.add = function(number) {
+		this.total += number;
+		return this.total;
+	}
+	this.subtract = function(number) {
+		this.total -= number;
+		return this.total;
+	}
+	this.multiply = function(number) {
+		this.total *= number;
+		return this.total;
+	}
+	this.divide = function(number) {
+		this.total /= number;
+		return this.total;
+	}
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
