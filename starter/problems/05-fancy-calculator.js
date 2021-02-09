@@ -19,6 +19,16 @@ fancyCalculator.total // => returns 1
 
 function FancyCalculator() {
 	this.total = 0;
+	this.setTotal = function (num) {
+		this.total = num;
+		return this.total;
+	}
+	this.squared = function() {
+		return this.total * this.total;
+	}
+	this.modulo = function(num) {
+		return this.total % num;
+	}
 }
 
 FancyCalculator.prototype.setTotal = function(num) {
